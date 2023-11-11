@@ -1,0 +1,134 @@
+body{
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    background-image: url(bgruniverse.gif);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-width: 375px;
+}
+h1{
+    color: rgb(223, 105, 203);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: 2px 4px 100px pink;
+    position: relative;
+    top:0;
+}
+h2{
+background-color: transparent;
+color:white;
+font-size: .9rem;
+bottom: 0;
+margin: 0 auto;
+
+}
+
+.otazky_kontajner {
+
+    max-width: 600px;
+
+    display: flex; 
+    flex-wrap: wrap;  /* Ensures wrapping of children to the next line */
+    justify-content: space-between; /* Distributes space between children */
+    margin: 0 auto;
+}
+
+.otazky_kontajner > div {
+    width: calc(50% - 8px); 
+    box-sizing: border-box;
+    display: inline-flex;
+    padding: 12px;
+    margin: 4px;
+    background-color: pink;
+    border-radius: 8px;
+    box-shadow: 0px 1px 14px white;
+    max-height: 130px;
+    position: relative;
+}
+.otazky_kontajner p{
+    width: 50%;
+    padding: 2px;
+    font-size: .7rem;
+    top:-20px;
+    position: relative;
+    font-weight: bold;
+    
+
+}
+.otazky_kontajner img {
+    width:70px;
+    height: 70px;
+}
+.otazky_kontajner input{
+    height: 14px;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+}
+.pravykontajner{
+    width: 100%;
+    display: inline-flex;
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.ponozka{
+    background-image: url(socks.gif);
+    background-size: contain;
+    background-size: 130%;
+    background-position: center ;
+    background-repeat: no-repeat;
+    width: 250px;
+    height:250px;
+    position: relative;
+    z-index:999;
+    display: none;
+
+}
+.kontajnerPISMENOK1,
+.kontajnerPISMENOK2{
+    color: red;
+    display: inline-flex;
+    position:absolute;
+    top: 30%;
+    left: 42%;
+    font-size: .7rem;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.kontajnerPISMENOK2{
+    left: 76%;
+}
+.vysledky{
+    position: relative;
+}
+.prazdnyVysledok{
+    box-shadow: -2px 2px 42px pink;
+    width: 100%;
+}
+.horseIMG,.latexIMG,.uchylIMG,.pikoIMG{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 2s ease;
+}
+.horseIMG{
+}
+.latexIMG{
+
+}
+.uchylIMG{
+
+}
+.pikoIMG{
+
+}
